@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cammy Nguyen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+      
+      p {
+        font-family: Roboto;
+        color: #42403F;
+      }
+
+      body {
+        background-color: #FAF9F7;
+        margin: 0;
+      }
+
+      /* NAVIGATION BAR */
+
+      .nav-bar {
+        background-color: #FAF9F7;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+
+        display: flex;
+        flex-direction: row;
+      }
+
+      .nav-left {
+        flex: 1;
+        margin-left: 50px;
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+      .nav-left-logo {
+        width: 200px;
+      }
+
+       .nav-right {
+        
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        max-width: 230px;
+        margin-right: 50px;
+
+        font-weight: 500;
+
+       }
+
+       .nav-link {
+        color: #86797B;
+        text-decoration: none;
+        transition: color 0.45s;
+       }
+
+       .nav-link:hover {
+        color: #42403F;
+        text-decoration: none;
+       }
+
+        /* HOME PAGE WITH MENU */
+
+       .home-page {
+        padding-top: 100px;
+        width: 100vw;
+        height: 100vh;
+        background-color: #FAF9F7;
+       }
+
+       .menu-box {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FAF9F7;
+        width: 500px;
+        height: 530px;
+
+        box-shadow: 0 0 0 10px rgba(203, 169, 146, 1);
+        border-radius: 5px;
+        
+       }
+
+       .menu-header {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+       }
+
+       .menu-logo-pic {
+        width: 200px;
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+
+       .menu-home {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+       }
+
+       .menu-description {
+        display: flex;
+        flex-direction: row;
+       }
+
+       .menu-left {
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        margin-left: 50px;
+        font-size: 20px;
+        font-weight: 400px;
+       }
+
+       .menu-right {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: flex-end;
+        text-align: right;
+        margin-right: 50px;
+        font-size: 20px;
+        font-weight: 400px;
+       }
+
+       /* ABOUT PAGE */
+
+       .about-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #BBC2A2;
+       }
+
+       .cammy-headshot {
+        flex: 1;
+        width: 400px;
+        max-width: 100%;
+        min-width: 400px;
+        margin-left: 50px;
+
+       }
+
+       .about-right {
+        flex: 1;
+        margin-right: 225px;
+        
+       }
+
+       .about-text {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom:0;
+        margin-left: 100px;
+        margin-right: 100px;
+       }
+
+       .about-header {
+        margin: 0;
+        font-weight: 600;
+        font-size: 40px;
+       }
+
+       .about-description {
+        font-size: 18px;
+        min-width: 300px;
+       }
+
+       .contact-box {
+        display: flex;
+        align-items: center;
+       }
+
+       .contact-icon {
+        width: 40px;
+        margin-right: 15px;
+        border: 1px solid #42403F;
+        border-radius: 7px;
+       }
+
+       .resume-link {
+        color: #42403F;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 16px;
+        background-color: #FAF9F7;
+        width: 100px;
+        height: 30px;
+        border: 1px solid #42403F;
+        border-radius: 30px;
+        border-color: #42403F;
+        transition: color, background-color 0.25s;
+
+      }
+
+      .resume-link:hover {
+      background-color: #ecebe9;
+      color: #42403F;
+      }
+
+      /* WORK PAGE */
+
+       .work-page {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        background-color: #FAF9F7;
+        margin-top: 50px;
+        margin-bottom: 100px;
+       }
+
+       .work-page-title {
+        font-family: Roboto;
+        font-weight: 500;
+        color: #42403F;
+        font-size: 30px;
+        margin-bottom: 25px;
+        background-color: rgba(203, 169, 146, 1);
+        border: 1px solid #42403F;
+        width: 685px;
+        height: 50px;
+        text-align:center;
+        line-height: 50px;
+        border-radius: 10px;
+       }
+
+       .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-top: 25px;
+        margin-right: 350px;
+        margin-left: 350px;
+
+        border: 1px solid #42403F;
+        border-radius: 10px;
+
+      }
+
+      .project-left {
+        flex: 1;
+        margin-left: 16px;
+      }
+
+      .project-name {
+        font-family: Roboto;
+        color: #42403F;
+        font-size: 35px;
+        margin-top: 0;
+      }
+
+      .project-role {
+        font-family: Roboto;
+        color: #42403F;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .project-description {
+        font-family: Roboto;
+        color: #86797B;
+        font-size: 16px;
+        width: 350px;
+        margin-bottom: 0px;
+      }
+
+      .project-right {
+        flex: 1;
+        display: flex;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        margin-right: 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .project-image {
+        height: 150px;
+        border-radius: 10px;
+        border: 1px solid #42403F;
+      }
+
+      .learn-more-btn {
+        display: inline-block;
+        color: #42403F;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 16px;
+        align-items:top;
+        background-color: #BBC2A2;
+        width: 200px;
+        height: 25px;
+        border: 1px solid #42403F;
+        border-radius: 30px;
+        border-color: #42403F;
+        transition: color, background-color 0.25s;
+        line-height: 25px;
+        text-decoration: none;
+
+      }
+
+
+      .learn-more-btn:hover{
+        background-color: #afb792;
+        color: #42403F;
+        cursor: pointer;
+      }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="nav-bar">
+
+      <div class="nav-left">
+        <p><a class="nav-link" href="#home">Cammy Nguyen</a></p>
+      </div>
+
+      <div class="nav-right">
+        <div>
+          <p><a class="nav-link" href="#home">Home</a></p>
+        </div>
+        <div>
+          <p><a class="nav-link" href="#about">About</a></p>
+        </div>
+        <div>
+          <p><a class="nav-link" href="#work">Work</a></p>
+        </div>
+        <div>
+          <p><a class="nav-link" href="html-files/journal.html">Journal</a></p>
+        </div>
+      </div>
+      
+
+    </div>
+
+    <div class="home-page" id="home">
+
+        <div class="menu-box">
+          <div class="menu-header">
+            <img class = "menu-logo-pic" src="resources/logos/cammy-dark.png">
+            <p class="menu-home">HOME</p>
+          </div>
+                <div class="menu-description">
+                  <div class="menu-left">
+                    <div class="menu-work">
+                      <p><a class="nav-link" href="#about">About</a></p>
+                    </div>
+                    <div class="menu-about">
+                      <p><a class="nav-link" href="#work">Work</a></p>
+                    </div>
+                    <div class="menu-journal">
+                      <p><a class="nav-link" href="journal.html">Journal</a></p>
+                    </div>
+                  </div>
+                  <div class="menu-right">
+                    <div class="menu-work">
+                      <p>$0.00</p>
+                    </div>
+                    <div class="menu-about">
+                      <p>$0.00</p>
+                    </div>
+                    <div class="menu-journal">
+                      <p>$0.00</p>
+                  </div>
+                  </div>
+
+                  </div>
+                </div>
+      </div>
+    </div>
+
+    <div class="about-page" id="about">
+      <div class="about-left">
+        <img class="cammy-headshot" src="resources/headshot/cammy-japan.JPG">
+      </div>
+      <div class="about-right">
+        <div class="about-text">
+          <div class="about-header">
+            <p>Hi there!</p>
+          </div>
+          <div class="about-description">
+            <p>My name is Cammy. I love crafting experiences—from ideating and designing to building my ideas.</p>
+            <p>I'm a student at Temple University studying Management Information Systems. If I had to sum myself up in three words, they'd be: developer, designer, and leader.</p>
+            <p>In my free time, I love trying new foods, taking pictures of the beautiful things in life, and immersing myself in music.</p>
+            <p style="font-weight:500;">Feel free to contact me, I'd love to have a conversation! &#9829;</p>
+          </div>
+          <div class="contact-box">
+
+            <a href="https://www.linkedin.com/in/cammynguyen" target="_blank" style="text-decoration: none;">
+              <img class="contact-icon" src="resources/logos/Linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.youtube.com/channel/UC0Ice5kIoR1x84xI558CdxQ" target="_blank" style="text-decoration: none;">
+              <img class="contact-icon" src="resources/logos/Youtube.png" alt="YouTube">
+            </a>
+            <a href="mailto:cammynguyen@temple.edu" target="_blank" style="text-decoration: none;">
+              <img class="contact-icon" src="resources/logos/Mail.png" alt="Email">
+            </a>
+            <a href="resources/documents/cammynguyen_resume.pdf" target="_blank">
+              <button class="resume-link">Resume</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-page" id="work">
+
+      <div class="work-page-title">Projects</div>
+
+      <div class="project-container">
+    
+        <div class="project">
+          <div class="project-left">
+            <h2 class="project-name">TUVenture</h2>
+            <p class="project-role">UX Designer</p>
+            <p class="project-description">An e-commerce platform for reducing community waste while uplifting student entrepreneurs</p>
+          </div>
+          <div class="project-right">
+            <img class="project-image" src="resources/projects/tuventure-logo.png"> <!--make sure that image is 600x300px-->
+            <p><a class="learn-more-btn" href="https://www.figma.com/proto/yda6IdUMBC6IQLQFv6o7hQ/UNIVenture---TUVenture?page-id=0%3A1&node-id=107-2&starting-point-node-id=107%3A2&scaling=scale-down-width&mode=design&t=wglxfqDkSWsEnwkq-1" target="_blank">Try it Out</a></p>
+          </div>
+        </div>
+    
+        <div class="project">
+          <div class="project-left">
+            <h2 class="project-name">Toll Calculator</h2>
+            <p class="project-role">Cloud Developer</p>
+            <p class="project-description">A tool for determining toll fees between Pennsylvania Turnpike interchanges</p>
+          </div>
+          <div class="project-right">
+            <img class="project-image" src="resources/projects/tollcalculator-logo.png"> <!--make sure that image is 600x300px-->
+            <p><a class="learn-more-btn" href="https://dkygc17yimba3.cloudfront.net/TollCalculator3.html" target="_blank">Try it Out</a></p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-left">
+            <h2 class="project-name">Color Flipper</h2>
+            <p class="project-role">Front-End Developer</p>
+            <p class="project-description">A color generator available in both simple and hex code formats</p>
+          </div>
+          <div class="project-right">
+            <img class="project-image" src="resources/projects/colorflipper-logo.png"> <!--make sure that image is 600x300px-->
+            <p><a class="learn-more-btn" href="html-files/color-flipper/index.html" target="_blank">Try it Out</a></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+</body>
+</html>
