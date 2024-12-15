@@ -1,0 +1,300 @@
+/* NAVIGATION BAR */
+
+.navStyle {
+  font-family: 'Roboto';
+  color: #767C6B;
+  background-color: #EEEDE5; 
+  padding-left: 20px; 
+  padding-right: 20px;
+  box-shadow: 0px 4px 6px rgba(118, 124, 107, 0.1);
+}
+
+.navHandwritten {
+  font-family: 'Caveat';
+  font-weight: 400;
+  color: #767C6B;
+  font-size: 25px;
+}
+
+/* HERO */
+
+.hero-section {
+  background-color: #EEEDE5; 
+  height: 100vh; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 350px; 
+  height: auto; 
+  margin: 0 auto; 
+}
+
+.hero-text h1 {
+  font-family: 'Caveat';
+  font-size: 4rem;
+  font-weight: 400;
+  color: #092805; 
+  text-align: center;
+}
+
+.hero-text p {
+  font-family: 'Roboto';
+  font-size: 1.2rem; 
+  font-weight: 400;
+  color: #092805; 
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ABOUT ME */
+
+.about-me-section {
+
+  background-color: #EEEDE5; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh;
+  padding-top: 60px;
+  margin-top: -60px; 
+  
+}
+
+.about-me-text {
+  font-family: 'Roboto', sans-serif;
+  color: #092805;
+  text-align: left; 
+}
+
+.about-me-text h2 {
+  font-family: 'Caveat';
+  font-size: 3rem;
+  color: #092805;
+  margin-bottom: 20px;
+}
+
+.about-me-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.buttonLink a {
+  margin-right: 10px; 
+  font-size: 1rem;
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.about-me-image img {
+  max-width: 100%; 
+}
+
+/* WORK */
+
+.work-section {
+  background-color: #EEEDE5; 
+  padding-top: 110px; 
+  margin-top: -30px;
+}
+
+.section-title {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  color: #092805;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.section-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #092805;
+}
+
+.section-subdescription {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #092805;
+  margin-bottom: 30px;
+  text-align: left; 
+}
+
+/* PROJECT CARDS */
+
+.work-card {
+  background-color: #F7F7F0;
+  border: 1px solid #092805;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.card-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 29, 8, 0.3);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.image-overlay:hover::before {
+  background-color: transparent;
+}
+
+.image-overlay:hover img {
+  transform: scale(1.05); 
+}
+
+.card-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+
+/* PERSONAL SECTION */
+.personal-section {
+  margin-top: 50px;
+  text-align: left; 
+  margin-bottom: 30px;
+}
+
+.section-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #092805;
+  margin-bottom: 20px;
+}
+
+.btn-outline-dark {
+  border: 1px solid #092805;
+  color: #092805;
+  transition: background-color 0.3s, color 0.3s;
+  width: 150px;
+}
+
+.btn-outline-dark:hover {
+  background-color: #092805;
+  color: #EEEDE5;
+}
+
+/* CONTACT ME */
+
+#contact-section {
+  
+  height: 250px;
+  padding-top: 30px; 
+  margin-top: -60px;
+  margin-bottom: 80px;
+}
+
+.contact-title {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  color: #092805;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #092805;
+  margin-bottom: 10px;
+}
+
+.section-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #092805;
+  margin-bottom: 20px;
+}
+
+.btn-outline-dark {
+  border: 1px solid #092805;
+  color: #092805;
+  transition: background-color 0.3s, color 0.3s;
+  width: 150px;
+}
+
+.btn-outline-dark:hover {
+  background-color: #092805;
+  color: #EEEDE5;
+}
+
+
+/* Divider */
+.section-divider {
+  border: none;
+  border-top: 1px solid #767C6B; /* Color for the line */
+  margin: 40px auto 0; /* Adds spacing above */
+  width: 85%; /* Adjust line width */
+}
+
+/* FOOTER */
+
+/* FOOTER */
+.footer {
+  background-color: #EEEDE5;
+  color: #767C6B;
+  height: 85px;
+}
+
+.footer-icon {
+  width: 24px; /* Icon size */
+  height: 24px;
+  margin-right: 10px; /* Adjust spacing between icons */
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:last-child {
+  margin-right: 0; /* Remove margin for the last icon */
+}
+
+.footer-icon:hover {
+  transform: scale(1.1); /* Smooth zoom effect */
+}
+
+.footer-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: #767C6B;
+  margin-bottom: 0; /* Remove extra margin */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+
+/* Background Color */
+
+body {
+  background-color: #EEEDE5; 
+}
+
+html {
+  background-color: #EEEDE5;
+}
